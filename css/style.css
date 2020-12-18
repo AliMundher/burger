@@ -8,11 +8,11 @@
   background-color: #f06c4e;
 }
 
-.custum_font, body .burgers_box .burger_big .sp_round, body .burgers_box .burger_big .title, body .burgers_box .burger_big .text_disc, body .burgers_box .burger_big .btn_add .text_add {
+.custum_font, body .burgers_box .burger_big .sp_round, body .burgers_box .burger_big .title, body .burgers_box .burger_big .text_disc, body .burgers_box .burger_big .btn_add .text_add, body .burgers_box .right_burger_one .title {
   font-family: 'Noto Serif', serif;
 }
 
-.ball, body .burgers_box .burger_big .boluts > span {
+.ball, body .burgers_box .burger_big .boluts > span, body .burgers_box .right_burger_one .boluts > span {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -20,6 +20,43 @@
   border-radius: 50%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.kcal_g, body .burgers_box .burger_big .kcal .kcal_circle, body .burgers_box .right_burger_one .kcal .kcal_circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding-top: 7px;
+}
+
+.box_burder, body .burgers_box .burger_big, body .burgers_box .right_burger_one {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.border-rd_left_top, body .burgers_box .burger_big .btn_minus, body .burgers_box .right_burger_one .btn_minus {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.btn_custum_g, body .burgers_box .burger_big .btn_custum, body .burgers_box .right_burger_one .btn_custum, body .burgers_box .right_burger_one .btn_shop {
+  background-color: #eff0f2 !important;
+  padding: 10px;
+  width: 41px;
+  border: none;
+}
+
+.border-rd_right_top, body .burgers_box .burger_big .btn_plus, body .burgers_box .right_burger_one .btn_plus {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #4b9d6c;
+}
+
+.num_pro, body .burgers_box .burger_big .num, body .burgers_box .right_burger_one .num {
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 body {
@@ -61,7 +98,7 @@ body .left_line {
   top: 42px;
   width: 100px;
   height: 100vh;
-  border: 3px solid red;
+  border-right: 1px solid #ddd;
 }
 
 body .left_line .icon_search {
@@ -89,12 +126,6 @@ body .left_line .pointes .group_1 {
   margin-top: -10px;
 }
 
-body .burgers_box .burger_big {
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  padding: 20px;
-}
-
 body .burgers_box .burger_big .boluts > span {
   cursor: pointer;
 }
@@ -104,14 +135,6 @@ body .burgers_box .burger_big .boluts > span:hover {
           transform: scale(2.2);
   background-color: #f06c4e;
   border: 1px solid #f06c4e;
-}
-
-body .burgers_box .burger_big .kcal .kcal_circle {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  padding-top: 7px;
 }
 
 body .burgers_box .burger_big .kcal .kcal_circle h6 {
@@ -144,6 +167,7 @@ body .burgers_box .burger_big .sp_round-two {
 
 body .burgers_box .burger_big .sp_round-three {
   width: 106px;
+  margin-left: 15px;
 }
 
 body .burgers_box .burger_big .text_disc {
@@ -151,26 +175,7 @@ body .burgers_box .burger_big .text_disc {
 }
 
 body .burgers_box .burger_big .btn_custum {
-  padding: 10px;
-  width: 41px;
-  border: none;
   margin-bottom: 2%;
-  background-color: #eff0f2 !important;
-}
-
-body .burgers_box .burger_big .btn_minus {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-
-body .burgers_box .burger_big .btn_plus {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
-body .burgers_box .burger_big .num {
-  font-weight: bold;
-  font-size: 1.4em;
 }
 
 body .burgers_box .burger_big .btn_add {
@@ -185,6 +190,63 @@ body .burgers_box .burger_big .btn_add .text_add {
   font-weight: bold;
   font-size: 0.9em;
   margin-right: 10px;
+}
+
+body .burgers_box .right_burger_one {
+  margin-left: 10px;
+  border: none;
+  background-color: #f8f7f5;
+  height: 50%;
+}
+
+body .burgers_box .right_burger_one .boluts > span {
+  cursor: pointer;
+}
+
+body .burgers_box .right_burger_one .boluts > span:hover {
+  -webkit-transform: scale(2.2);
+          transform: scale(2.2);
+  background-color: #f06c4e;
+  border: 1px solid #f06c4e;
+}
+
+body .burgers_box .right_burger_one .kcal .kcal_circle {
+  text-align: center;
+}
+
+body .burgers_box .right_burger_one .kcal .kcal_circle h6 {
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+body .burgers_box .right_burger_one .title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body .burgers_box .right_burger_one .disc {
+  font-size: 0.8em;
+}
+
+body .burgers_box .right_burger_one .btn_custum {
+  margin: 2% 0;
+}
+
+body .burgers_box .right_burger_one .num {
+  font-size: 1em;
+}
+
+body .burgers_box .right_burger_one .btn_shop {
+  border-radius: 10px;
+  background-color: #e4efe9 !important;
+  color: #4b9d6c;
+  width: 50px;
+}
+
+body .burgers_box .up_to {
+  position: relative;
+  top: -195px;
+  left: 10px;
 }
 
 .bg-light {

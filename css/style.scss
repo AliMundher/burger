@@ -19,6 +19,37 @@
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
 }
+.kcal_g {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding-top: 7px;
+}
+.box_burder {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 20px;
+}
+.border-rd_left_top {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.btn_custum_g {
+  background-color: #eff0f2 !important;
+  padding: 10px;
+  width: 41px;
+  border: none;
+}
+.border-rd_right_top {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #4b9d6c;
+}
+.num_pro {
+  font-weight: bold;
+  font-size: 1.4em;
+}
 // End Some Classes for Me Framework
 
 body {
@@ -61,7 +92,7 @@ body {
     top: 42px;
     width: 100px;
     height: 100vh;
-    border: 3px solid red;
+    border-right: 1px solid #ddd;
     .icon_search {
       position: relative;
       left: 42%;
@@ -88,9 +119,7 @@ body {
   // Start burgers_box
   .burgers_box {
     .burger_big {
-      border: 1px solid #ddd;
-      border-radius: 25px;
-      padding: 20px;
+      @extend .box_burder;
       .boluts {
         & > span {
           @extend .ball;
@@ -104,11 +133,7 @@ body {
       }
       .kcal {
         .kcal_circle {
-          width: 40px;
-          height: 40px;
-          border: 1px solid #ddd;
-          border-radius: 50%;
-          padding-top: 7px;
+          @extend .kcal_g;
           h6 {
             font-size: 0.6em;
             font-weight: bold;
@@ -138,29 +163,24 @@ body {
       }
       .sp_round-three {
         width: 106px;
+        margin-left: 15px;
       }
       .text_disc {
         @extend .custum_font;
         font-size: 0.9em;
       }
       .btn_custum {
-        padding: 10px;
-        width: 41px;
-        border: none;
+        @extend .btn_custum_g;
         margin-bottom: 2%;
-        background-color: #eff0f2 !important;
       }
       .btn_minus {
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
+        @extend .border-rd_left_top;
       }
       .btn_plus {
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
+        @extend .border-rd_right_top;
       }
       .num {
-        font-weight: bold;
-        font-size: 1.4em;
+        @extend .num_pro;
       }
       .btn_add {
         background-color: #e4efe9 !important;
@@ -175,6 +195,68 @@ body {
           @extend .custum_font;
         }
       }
+    }
+    .right_burger_one {
+      @extend .box_burder;
+      margin-left: 10px;
+      border: none;
+      background-color: #f8f7f5;
+      height: 50%;
+      .boluts {
+        & > span {
+          @extend .ball;
+          cursor: pointer;
+          &:hover {
+            transform: scale(2.2);
+            background-color: #f06c4e;
+            border: 1px solid #f06c4e;
+          }
+        }
+      }
+      .kcal {
+        .kcal_circle {
+          @extend .kcal_g;
+          text-align: center;
+          h6 {
+            font-size: 0.6em;
+            font-weight: bold;
+          }
+        }
+      }
+      .title {
+        font-size: 1em;
+        font-weight: bold;
+        @extend .custum_font;
+      }
+      .disc {
+        font-size: 0.8em;
+      }
+      .btn_custum {
+        @extend .btn_custum_g;
+        margin: 2% 0;
+      }
+      .btn_plus {
+        @extend .border-rd_right_top;
+      }
+      .btn_minus {
+        @extend .border-rd_left_top;
+      }
+      .num {
+        @extend .num_pro;
+        font-size: 1em;
+      }
+      .btn_shop {
+        @extend .btn_custum_g;
+        border-radius: 10px;
+        background-color: #e4efe9 !important;
+        color: #4b9d6c;
+        width: 50px;
+      }
+    }
+    .up_to {
+      position: relative;
+      top: -195px;
+      left: 10px;
     }
   }
   //end burgers_box
