@@ -1,0 +1,201 @@
+// Start Some Classes for Me Framework
+.hover_link {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 75%;
+  height: 3px;
+  background-color: #f06c4e;
+}
+.custum_font {
+  font-family: 'Noto Serif', serif;
+}
+.ball {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+// End Some Classes for Me Framework
+
+body {
+  background-color: #f8f7f5;
+  height: 3000px;
+  header {
+    background-color: #fff;
+    min-height: 600px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 1450px;
+    margin: auto;
+    position: relative;
+    .log_in_out {
+      .btn {
+        width: 110px;
+        border: none;
+        border-radius: 10px;
+        background-color: #f06c4e;
+        padding: 12px 0;
+        font-weight: bold;
+        font-size: 0.9em;
+        transition: all 0.4s ease-in-out;
+        color: #fef0ed;
+        &:hover {
+          background-color: #fef0ed;
+          color: #f06c4e;
+        }
+      }
+      .btn_in {
+      }
+      .btn_out {
+      }
+    }
+  }
+  // Start Left Line
+  .left_line {
+    position: absolute;
+    left: 32px;
+    top: 42px;
+    width: 100px;
+    height: 100vh;
+    border: 3px solid red;
+    .icon_search {
+      position: relative;
+      left: 42%;
+      top: 9%;
+    }
+    .pointes {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      width: 45px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      margin: auto;
+      padding-bottom: 8px;
+      i {
+        font-size: 0.4em;
+      }
+      .group_1 {
+        margin-top: -10px;
+      }
+    }
+  }
+  // End Left Line
+  // Start burgers_box
+  .burgers_box {
+    .burger_big {
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      padding: 20px;
+      .boluts {
+        & > span {
+          @extend .ball;
+          cursor: pointer;
+          &:hover {
+            transform: scale(2.2);
+            background-color: #f06c4e;
+            border: 1px solid #f06c4e;
+          }
+        }
+      }
+      .kcal {
+        .kcal_circle {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #ddd;
+          border-radius: 50%;
+          padding-top: 7px;
+          h6 {
+            font-size: 0.6em;
+            font-weight: bold;
+          }
+        }
+      }
+      .sp_round {
+        width: 80px;
+        display: inline-block;
+        border-radius: 100px;
+        border: 1px solid #ddd;
+        padding: 3px;
+        text-transform: capitalize;
+        font-size: 0.9em;
+        @extend .custum_font;
+        .strong_g {
+          font-size: 0.8em;
+        }
+      }
+      .title {
+        @extend .custum_font;
+        font-size: 2.1em;
+        font-weight: bold;
+      }
+      .sp_round-two {
+        width: 118px;
+      }
+      .sp_round-three {
+        width: 106px;
+      }
+      .text_disc {
+        @extend .custum_font;
+        font-size: 0.9em;
+      }
+      .btn_custum {
+        padding: 10px;
+        width: 41px;
+        border: none;
+        margin-bottom: 2%;
+        background-color: #eff0f2 !important;
+      }
+      .btn_minus {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+      .btn_plus {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+      .num {
+        font-weight: bold;
+        font-size: 1.4em;
+      }
+      .btn_add {
+        background-color: #e4efe9 !important;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        color: #4b9d6c;
+        .text_add {
+          font-weight: bold;
+          font-size: 0.9em;
+          margin-right: 10px;
+          @extend .custum_font;
+        }
+      }
+    }
+  }
+  //end burgers_box
+}
+
+// Bootstarp Style
+.bg-light {
+  background-color: transparent !important;
+  margin-top: 3%;
+  padding-top: 40px;
+}
+.navbar-light .navbar-nav .nav-link {
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #f06c4e;
+}
+
+.navbar-light .navbar-nav .nav-link.active:after {
+  @extend .hover_link;
+}
+.nav-item:hover .navbar-light .navbar-nav .nav-link:after {
+  @extend .hover_link;
+}

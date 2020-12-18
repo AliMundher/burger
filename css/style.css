@@ -1,0 +1,203 @@
+.hover_link, .navbar-light .navbar-nav .nav-link.active:after, .nav-item:hover .navbar-light .navbar-nav .nav-link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 75%;
+  height: 3px;
+  background-color: #f06c4e;
+}
+
+.custum_font, body .burgers_box .burger_big .sp_round, body .burgers_box .burger_big .title, body .burgers_box .burger_big .text_disc, body .burgers_box .burger_big .btn_add .text_add {
+  font-family: 'Noto Serif', serif;
+}
+
+.ball, body .burgers_box .burger_big .boluts > span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  background-color: #f8f7f5;
+  height: 3000px;
+}
+
+body header {
+  background-color: #fff;
+  min-height: 600px;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1450px;
+  margin: auto;
+  position: relative;
+}
+
+body header .log_in_out .btn {
+  width: 110px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f06c4e;
+  padding: 12px 0;
+  font-weight: bold;
+  font-size: 0.9em;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #fef0ed;
+}
+
+body header .log_in_out .btn:hover {
+  background-color: #fef0ed;
+  color: #f06c4e;
+}
+
+body .left_line {
+  position: absolute;
+  left: 32px;
+  top: 42px;
+  width: 100px;
+  height: 100vh;
+  border: 3px solid red;
+}
+
+body .left_line .icon_search {
+  position: relative;
+  left: 42%;
+  top: 9%;
+}
+
+body .left_line .pointes {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  width: 45px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: auto;
+  padding-bottom: 8px;
+}
+
+body .left_line .pointes i {
+  font-size: 0.4em;
+}
+
+body .left_line .pointes .group_1 {
+  margin-top: -10px;
+}
+
+body .burgers_box .burger_big {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+body .burgers_box .burger_big .boluts > span {
+  cursor: pointer;
+}
+
+body .burgers_box .burger_big .boluts > span:hover {
+  -webkit-transform: scale(2.2);
+          transform: scale(2.2);
+  background-color: #f06c4e;
+  border: 1px solid #f06c4e;
+}
+
+body .burgers_box .burger_big .kcal .kcal_circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding-top: 7px;
+}
+
+body .burgers_box .burger_big .kcal .kcal_circle h6 {
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+body .burgers_box .burger_big .sp_round {
+  width: 80px;
+  display: inline-block;
+  border-radius: 100px;
+  border: 1px solid #ddd;
+  padding: 3px;
+  text-transform: capitalize;
+  font-size: 0.9em;
+}
+
+body .burgers_box .burger_big .sp_round .strong_g {
+  font-size: 0.8em;
+}
+
+body .burgers_box .burger_big .title {
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+body .burgers_box .burger_big .sp_round-two {
+  width: 118px;
+}
+
+body .burgers_box .burger_big .sp_round-three {
+  width: 106px;
+}
+
+body .burgers_box .burger_big .text_disc {
+  font-size: 0.9em;
+}
+
+body .burgers_box .burger_big .btn_custum {
+  padding: 10px;
+  width: 41px;
+  border: none;
+  margin-bottom: 2%;
+  background-color: #eff0f2 !important;
+}
+
+body .burgers_box .burger_big .btn_minus {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+body .burgers_box .burger_big .btn_plus {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+body .burgers_box .burger_big .num {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+body .burgers_box .burger_big .btn_add {
+  background-color: #e4efe9 !important;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: #4b9d6c;
+}
+
+body .burgers_box .burger_big .btn_add .text_add {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-right: 10px;
+}
+
+.bg-light {
+  background-color: transparent !important;
+  margin-top: 3%;
+  padding-top: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #f06c4e;
+}
+/*# sourceMappingURL=style.css.map */
